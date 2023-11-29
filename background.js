@@ -38,5 +38,9 @@ function incrementCount() {
 }
 
 function isBlacklisted(blacklist, url) {
-	return blacklist.some(line => url.match(RegExp(`^${line}$`)));
+	return blacklist.some(
+		line => {
+			return RegExp(`^${line}$`).test(url)
+		}
+	);
 }
