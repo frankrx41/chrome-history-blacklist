@@ -38,5 +38,5 @@ function incrementCount() {
 }
 
 function isBlacklisted(blacklist, url) {
-	return blacklist.some(line => url.toLowerCase().includes(line.toLowerCase()));
+	return blacklist.some(line => url.match(RegExp(`^${line}$`)));
 }

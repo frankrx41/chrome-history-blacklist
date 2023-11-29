@@ -16,7 +16,7 @@
 		"scripts": ["background.js"],
 		"persistent": false
 	},
-	"homepage_url": "https://github.com/smrq/chrome-history-blacklist",
+	"homepage_url": "https://github.com/frankrx41/chrome-history-blacklist",
 	"options_page": "options.html",
 	"permissions": ["history", "storage"]
 }
